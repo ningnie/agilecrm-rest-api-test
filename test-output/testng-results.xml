@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8375" started-at="2018-06-04T13:24:12Z" finished-at="2018-06-04T13:24:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8375" started-at="2018-06-04T13:24:12Z" finished-at="2018-06-04T13:24:21Z">
+      <class name="com.zuora.test.exam.testcases.DealsTest">
+        <test-method status="PASS" signature="testPrepares()[pri:0, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="testPrepares" is-config="true" duration-ms="14" started-at="2018-06-04T13:24:12Z" finished-at="2018-06-04T13:24:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrepares -->
+        <test-method status="PASS" signature="testCreateDealsValid()[pri:1, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="testCreateDealsValid" duration-ms="2874" started-at="2018-06-04T13:24:12Z" finished-at="2018-06-04T13:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateDealsValid -->
+        <test-method status="PASS" signature="testCreateDealsInvalid()[pri:2, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="testCreateDealsInvalid" duration-ms="489" started-at="2018-06-04T13:24:15Z" finished-at="2018-06-04T13:24:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateDealsInvalid -->
+        <test-method status="PASS" signature="testCreateDealsWrongFormat()[pri:3, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="testCreateDealsWrongFormat" duration-ms="559" started-at="2018-06-04T13:24:16Z" finished-at="2018-06-04T13:24:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateDealsWrongFormat -->
+        <test-method status="PASS" signature="testListDealsValid()[pri:4, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="testListDealsValid" duration-ms="1375" started-at="2018-06-04T13:24:16Z" finished-at="2018-06-04T13:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListDealsValid -->
+        <test-method status="PASS" signature="testListDealsInValid()[pri:5, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="testListDealsInValid" duration-ms="532" started-at="2018-06-04T13:24:18Z" finished-at="2018-06-04T13:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListDealsInValid -->
+        <test-method status="FAIL" signature="updateDealValid()[pri:6, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="updateDealValid" duration-ms="516" started-at="2018-06-04T13:24:18Z" finished-at="2018-06-04T13:24:19Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<400> but was:<200>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<400> but was:<200>
+at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:364)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:80)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:245)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:252)
+at com.zuora.test.exam.util.TestBase.executePutCommonCases(TestBase.java:52)
+at com.zuora.test.exam.testcases.DealsTest.updateDealValid(DealsTest.java:99)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDealValid -->
+        <test-method status="PASS" signature="updateDealInValid()[pri:7, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="updateDealInValid" duration-ms="454" started-at="2018-06-04T13:24:19Z" finished-at="2018-06-04T13:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDealInValid -->
+        <test-method status="PASS" signature="updateDealWrongFormat()[pri:8, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="updateDealWrongFormat" duration-ms="474" started-at="2018-06-04T13:24:19Z" finished-at="2018-06-04T13:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDealWrongFormat -->
+        <test-method status="PASS" signature="deleteDealInValid()[pri:9, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="deleteDealInValid" duration-ms="466" started-at="2018-06-04T13:24:20Z" finished-at="2018-06-04T13:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDealInValid -->
+        <test-method status="PASS" signature="deleteDealValid()[pri:10, instance:com.zuora.test.exam.testcases.DealsTest@41eaa2]" name="deleteDealValid" duration-ms="570" started-at="2018-06-04T13:24:20Z" finished-at="2018-06-04T13:24:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDealValid -->
+      </class> <!-- com.zuora.test.exam.testcases.DealsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
